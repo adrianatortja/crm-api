@@ -12,4 +12,12 @@ class ClientListCreateView(generics.ListCreateAPIView):
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
-        
+
+
+class ClientDetailView(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = ClientSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        return Client.objects.filter(user=self.request.user)
+    

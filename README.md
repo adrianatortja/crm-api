@@ -15,6 +15,7 @@ A Django REST API for managing CRM data with JWT authentication, ownership-based
 - Ownership validation
 - Filtering, search, and ordering
 - Swagger/OpenAPI documentation with drf-spectacular
+- Automated API tests
 
 # Tech Stack
 
@@ -192,6 +193,15 @@ After running the server, open:
 
 - Swagger UI: `http://127.0.0.1:8000/api/docs/`
 - OpenAPI schema: `http://127.0.0.1:8000/api/schema/`
+
+# Running Tests
+
+Run the full test suite with:
+
+```bash
+python manage.py test
+
+```
 
 # Notes
 

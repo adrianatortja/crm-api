@@ -1,6 +1,6 @@
 # CRM API
 
-A Django REST API for managing CRM data with JWT authentication, ownership-based access control, filtering, search, ordering, and API documentation.
+![Django Tests](https://github.com/adrianatortja/crm-api/actions/workflows/django.yml/badge.svg)
 
 # Features
 
